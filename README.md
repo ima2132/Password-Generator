@@ -1,2 +1,2 @@
-# password-generator-
+# Password Generator
 JavaScript Challenge: Password Generator
