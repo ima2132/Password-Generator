@@ -11,8 +11,11 @@ generateButton.addEventListener("click", () => {
   // make sure to get the user's input 
 const lowercase = form.lowercase.checked;
 const uppercase = form.uppercase.checked;
+const numbers = form.numbers.checked;
+const special = form.special.checked;
+const length = parseInt(form.length.value, 10);
 
-
+// make sure the user's input satisfies the given min-max character password length
 
 
 
