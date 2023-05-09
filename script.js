@@ -1,6 +1,6 @@
 // assignment code here
 
-// adding a form to the page 
+// <----------------- adding a form to the page -----------------> //
 <form action="javascript:generatePassword()">
 <input type="number" id="length" placeholder="Password Length" min="8" max="128" />
 <input type="checkbox" id="lowercase" name="characters" value="lowercase" />
