@@ -42,13 +42,12 @@ if (length < 8 || length > 128) {
     characters.push("!@#$%^&*()-_+={}[]|\\:;'\",.<>/?");
   }
 
+  const password= [];
+  for (let i = 0; i < length; i++) {
+    const character = characters[Math.floor(Math.random() *characters.length)];
+    password.push(character);
+  }
 
-
-
-
-})
-
-
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+  // password input value
+  passwordInput.value = password.join("");
+});
