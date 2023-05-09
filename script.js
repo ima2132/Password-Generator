@@ -1,18 +1,24 @@
 // assignment code here
 document.addEventListener("DOMContentLoaded", () => {
 
-const passwordInput = document.querySelector("#password");
-
 // get references to the #generate element
 const generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", () => {
   
 // make sure to get the user's input 
-const lowercase = form.lowercase.checked;
-const uppercase = form.uppercase.checked;
-const numbers = form.numbers.checked;
-const special = form.special.checked;
-const length = parseInt(form.length.value, 10);
+const lowercase = document.querySelector("#lowercase").checked;
+alert("Click OK to confirm including lowercase characters.");
+
+const uppercase = document.querySelector("#uppercase").checked;
+alert("Click OK to confirm including uppercase characters.");
+
+const numbers = document.querySelector("#numbers").checked;
+alert("Click OK to confirm including numerical values.");
+
+const special = document.querySelector("#special").checked;
+alert("Click OK to confirm including special characters.");
+
+const length = parseInt(document.querySelector("#length").value, 10); 
 
 // make sure the user's input satisfies the given min-max character password length
 if (length < 8 || length > 128) {
@@ -42,11 +48,11 @@ if (length < 8 || length > 128) {
 
   const password= [];
   for (let i = 0; i < length; i++) {
-    const character = characters[Math.floor(Math.random() *characters.length)];
+    const character = characters[Math.floor(Math.random() * characters.length)];
     password.push(character);
   }
 
   // password input value
-  passwordInput.value = password.join("");
+  document.querySelector("#password").value = password.join("");
 });
 });
