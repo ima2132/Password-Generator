@@ -5,8 +5,19 @@ const generateButton = document.querySelector("#generate");
 const passwordInput = document.querySelector("#password");
 
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// get references to the #generate element
+generateButton.addEventListener("click", () => {
+  
+  // make sure to get the user's input 
+const lowercase = form.lowercase.checked;
+const uppercase = form.uppercase.checked;
+
+
+
+
+
+})
+
 
 // Write password to the #password input
 function writePassword() {
