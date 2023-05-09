@@ -6,7 +6,7 @@ const passwordInput = document.querySelector("#password");
 
 
 // get references to the #generate element
-generateButton.addEventListener("click", () => {
+generateBtn.addEventListener("click", () => {
   
   // make sure to get the user's input 
 const lowercase = form.lowercase.checked;
