@@ -1,6 +1,9 @@
 // assignment code here
 document.addEventListener("DOMContentLoaded", () => {
 const form = document.querySelector("form");
+if (!form) {
+  return; // exit early if the form is null
+}
 const passwordInput = document.querySelector("#password");
 
 // get references to the #generate element
