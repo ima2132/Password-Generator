@@ -27,20 +27,28 @@ if (length < 8 || length > 128) {
   }
 
 
-)
+  // generating a password 
+  const characters = [];
+  if (lowercase) {
+    characters.push("abcdefghijklmnopqrstuvwxyz");
+  }
+  if (uppercase) {
+    characters.push("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  }
+  if (numbers) {
+    characters.push("0123456789");
+  }
+  if (special) {
+    characters.push("!@#$%^&*()-_+={}[]|\\:;'\",.<>/?");
+  }
+
+
+
 
 
 })
 
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
