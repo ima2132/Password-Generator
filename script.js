@@ -1,7 +1,7 @@
 // assignment code here
 
 const form = document.querySelector("form");
-const generateButton = document.querySelector("#generate");
+const generateBtn = document.querySelector("#generate");
 const passwordInput = document.querySelector("#password");
 
 
