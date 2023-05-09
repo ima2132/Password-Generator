@@ -1,7 +1,8 @@
 // assignment code here
 
-// <----------------- adding a form to the page -----------------> //
-
+const form = document.querySelector("form");
+const generateButton = document.querySelector("#generate");
+const passwordInput = document.querySelector("#password");
 
 
 // Get references to the #generate element
