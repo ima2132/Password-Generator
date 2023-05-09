@@ -1,11 +1,11 @@
 // assignment code here
 
 const form = document.querySelector("form");
-const generateBtn = document.querySelector("#generate");
 const passwordInput = document.querySelector("#password");
 
 
 // get references to the #generate element
+const generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", () => {
   
   // make sure to get the user's input 
