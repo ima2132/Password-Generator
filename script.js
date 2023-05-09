@@ -16,7 +16,18 @@ const special = form.special.checked;
 const length = parseInt(form.length.value, 10);
 
 // make sure the user's input satisfies the given min-max character password length
+if (length < 8 || length > 128) {
+  alert("Please choose a password length between 8 and 128 characters.");
+  return;
+  }
 
+  if (!lowercase && !uppercase && !numbers && !special) {
+    alert("Please select at least one character type.");
+    return;
+  }
+
+
+)
 
 
 })
