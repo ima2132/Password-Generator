@@ -1,14 +1,13 @@
 // assignment code here
-
+document.addEventListener("DOMContentLoaded", () => {
 const form = document.querySelector("form");
 const passwordInput = document.querySelector("#password");
-
 
 // get references to the #generate element
 const generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", () => {
   
-  // make sure to get the user's input 
+// make sure to get the user's input 
 const lowercase = form.lowercase.checked;
 const uppercase = form.uppercase.checked;
 const numbers = form.numbers.checked;
@@ -25,7 +24,6 @@ if (length < 8 || length > 128) {
     alert("Please select at least one character type.");
     return;
   }
-
 
   // generating a password 
   const characters = [];
@@ -50,4 +48,5 @@ if (length < 8 || length > 128) {
 
   // password input value
   passwordInput.value = password.join("");
+});
 });
