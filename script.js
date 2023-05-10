@@ -6,19 +6,16 @@ const generateBtn = document.querySelector("#generate");
 generateBtn.addEventListener("click", () => {
   
 // make sure to get the user's input 
-const lowercase = document.querySelector("#lowercase").checked;
-alert("Click OK to confirm including lowercase characters.");
+const lowercase = confirm("Would you like to include lowercase characters?");
 
-const uppercase = document.querySelector("#uppercase").checked;
-alert("Click OK to confirm including uppercase characters.");
+const uppercase = confirm("Would you like to include uppercase characters?");
 
-const numbers = document.querySelector("#numbers").checked;
-alert("Click OK to confirm including numerical values.");
+const numbers = confirm("Would you like to include numbers?");
 
-const special = document.querySelector("#special").checked;
-alert("Click OK to confirm including special characters.");
+const special = confirm("Would you like to include special characters?");
 
 const length = parseInt(document.querySelector("#length").value, 10); 
+
 
 // make sure the user's input satisfies the given min-max character password length
 if (length < 8 || length > 128) {
