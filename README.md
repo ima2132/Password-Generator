@@ -1,5 +1,13 @@
 # Password Generator
 
+## Table of Contents
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Deployed URL](#deployed-url)
 ## Description 
 I was tasked with creating a random password generator, in which the user decides the criteria of the password through prompts implemented through JavaScript. 
 
@@ -53,12 +61,9 @@ To use this application, users may click the "Generate Password" button displaye
 
 The user will then be provided with prompts on whether or not they wish to include lowercase letters, uppercase letters, numbers, and/or special characters in their password. After completing the prompts, the password generator will generate a password in the box. 
 
-## Screenshots 
-
 ## Deployed URL 
 
 https://ima2132.github.io/Password-Generator/ 
-
 
 
 ## License
