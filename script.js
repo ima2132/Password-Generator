@@ -46,7 +46,7 @@ if (length < 8 || length > 128) {
   console.log('characters:', characters);
 
   const password= [];
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < length; i++) {
     const character = characters[Math.floor(Math.random() * characters.length)];
     password.push(character);
   }
